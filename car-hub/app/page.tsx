@@ -1,5 +1,6 @@
-import { CustomFilter, Hero, SearchBar, CarCard } from "@/components";
+import { CustomFilter, Hero, SearchBar, CarCard, ShowMore } from "@/components";
 import { fetchCars } from "@/utils";
+import { fuels, yearsOfProduction } from "@/constants";
 
 export default async function Home({ searchParams}) {
   const allCars = await fetchCars({
@@ -24,8 +25,8 @@ export default async function Home({ searchParams}) {
           <SearchBar />
 
           <div className="home__filter-container">
-            <CustomFilter title="fuel"/>
-            <CustomFilter title="year"/>
+            <CustomFilter title="fuel" options={fuels}/>
+            <CustomFilter title="year" options={yearsOfProduction}/>
           </div>
         </div>
 
@@ -35,6 +36,11 @@ export default async function Home({ searchParams}) {
               {allCars?.map((car) => 
               <CarCard key={car} car={car}/>
               )} </div>
+              
+              <ShowMore 
+              pageNumber={(searchParams.limit || 10) / 10}
+              isNext={(searchParams.limit || 10) > allCars.length}
+              />
           </section>
         ) : (
           <div className="home__error-container">
@@ -42,6 +48,8 @@ export default async function Home({ searchParams}) {
             <p>{allCars?.message}</p>
           </div>
         )}
+
+
       </div>
     </main>
   );
