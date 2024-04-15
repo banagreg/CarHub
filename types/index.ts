@@ -1,17 +1,17 @@
-import { MouseEventHandler } from "react";
+import { NavigateOptions } from 'next/dist/shared/lib/app-router-context';
+import { MouseEventHandler } from 'react';
 
 export interface CustomButtonProps {
 	title: string;
 	containerStyles?: string;
-	handleClick?:
-	MouseEventHandler<HTMLButtonElement>;
-	btnType?: "button" | "submit";
+	handleClick?: MouseEventHandler<HTMLButtonElement>;
+	btnType?: 'button' | 'submit';
 	textStyles?: string;
 	rightIcon?: string;
 	isDisabled?: boolean;
 }
 
-export interface OptionProps{
+export interface OptionProps {
 	title: string;
 	value: string;
 }
@@ -21,7 +21,7 @@ export interface CustomFilterProps {
 	options: OptionProps[];
 }
 
-export interface SearchManufacturerProps{
+export interface SearchManufacturerProps {
 	manufacturer: string;
 	setManufacturer: (manufacturer: string) => void;
 }
@@ -43,13 +43,21 @@ export interface CarProps {
 
 export interface FilterProps {
 	manufacturer: string;
-    year: number;
-    fuel: string;
-    limit: number;
-    model: string;
+	year: number;
+	fuel: string;
+	limit: number;
+	model: string;
 }
 
 export interface ShowMoreProps {
 	pageNumber: number;
 	isNext: boolean;
+}
+
+export interface HomeProps {
+	searchParams: FilterProps;
+}
+
+export interface CustomNavigateOptions extends NavigateOptions {
+	scroll?: boolean;
 }
