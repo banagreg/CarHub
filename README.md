@@ -22,7 +22,7 @@ Showcases a visually appealing display of cars fetched from a third-party API, p
 
 Explore a wide variety of cars from around the world, utilizing a search and filter system based on criteria such as model, manufacturer, year, fuel type, and make.
 
-![Explore](./assets/explore.png)
+![Explore](./assets/Explore.png)
 
 ### 👉 Transition to Server-Side Rendering
 
