@@ -16,19 +16,19 @@ Developed with Next.js and leveraging its server-side rendering capabilities, th
 
 Showcases a visually appealing display of cars fetched from a third-party API, providing a captivating introduction to the diverse range of vehicles available.
 
-![Home](../car-hub/assets/homePage.png)
+![Home](./assets/homePage.png)
 
 ### 👉 Exploration and Filtering
 
 Explore a wide variety of cars from around the world, utilizing a search and filter system based on criteria such as model, manufacturer, year, fuel type, and make.
 
-![Explore](../car-hub/assets/explore.png)
+![Explore](./assets/explore.png)
 
 ### 👉 Transition to Server-Side Rendering
 
 A seamless transition from client-side rendering to server-side rendering, enhancing performance and providing a smoother browsing experience.
 
-![View more](../car-hub/assets/carDetails.png)
+![View more](./assets/carDetails.png)
 
 ### 👉 Pagination
 
@@ -42,6 +42,6 @@ Utilize TypeScript to provide robust typing for enhanced code quality and better
 
 The website is designed to be visually pleasing and responsive, ensuring an optimal user experience across various devices.
 
-<img src="../car-hub/assets/responsive1.png" alt="Responsive" width="300">
-<img src="../car-hub/assets/responsive2.png" alt="Responsive" width="300">
-<img src="../car-hub/assets/responsive3.png" alt="Responsive" width="300">
+<img src="./assets/responsive1.png" alt="Responsive" width="300">
+<img src="./assets/responsive2.png" alt="Responsive" width="300">
+<img src="./assets/responsive3.png" alt="Responsive" width="300">
